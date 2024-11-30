@@ -3,8 +3,7 @@
 import kotlin.system.measureTimeMillis
 
 fun missingNumber(nums: IntArray): Int {
-    val n = nums.size
-    val expectSum = n*(n+1)/2
+    val expectSum = nums.size*(nums.size+1)/2
     val actualSum = nums.sum()
     return expectSum - actualSum
 }
